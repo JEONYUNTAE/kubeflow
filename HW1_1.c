@@ -10,8 +10,7 @@ int wordcount(char* array);
 
 int main(void) {
 	char* string_array=malloc(sizeof(char)*1000);    
-	printf("Input : ");
-
+	
 	scanf("%s",string_array);
 
 	int j=strlen(string_array);   
@@ -21,17 +20,17 @@ int main(void) {
 	
 	if (j%2==1){
 		
-		printf("Output : 0");		
+		printf("0");		
 	}
 	
 	else if (j==0){
 		
-		printf("Output : 0");
+		printf("0");
 	}
 	
 	else if (j>=1000){
 		
-		printf("Output : 0");
+		printf("0");
 	}
 	
 	else{
@@ -55,7 +54,7 @@ int main(void) {
 			
 
 			if (count_1<count_2){
-				printf("Output : 0");
+				printf("0");
 				++error_code;
 				break;
 			}
@@ -63,7 +62,7 @@ int main(void) {
 		
 		if(count_1!=count_2&&error_code==0){
 			
-			printf("Output : 0");
+			printf("0");
 		}
 		
 		else if(error_code==0){
@@ -71,7 +70,7 @@ int main(void) {
 			
 			int count;
 			count=wordcount(string_array);
-			printf("Output : %d",count);
+			printf("%d",count);
 			
 		}
 	}
